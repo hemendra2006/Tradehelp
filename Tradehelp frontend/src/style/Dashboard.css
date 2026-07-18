@@ -1,0 +1,185 @@
+
+
+.dashboard{
+/* margin-top: 90px; */
+display:flex;
+
+background:#070B17;
+
+min-height:100vh;
+
+color:white;
+
+font-family:sans-serif;
+
+}
+
+.sidebar{
+
+width:250px;
+
+background:#0d1226;
+
+padding:30px;
+
+border-right:1px solid rgba(255,255,255,.08);
+
+}
+
+.logo{
+
+font-size:30px;
+
+margin-bottom:50px;
+
+}
+
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #b7c3dd;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+.sidebar li a:hover {
+  background: #192341;
+  color: white;
+}
+
+.sidebar li a.active-link {
+  background: linear-gradient(135deg,#2563eb,#7c3aed);
+  color: white;
+}
+
+
+
+
+.main{
+flex:1;
+padding:30px;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+}
+
+.search{
+  top: 0;
+display:flex;
+align-items:center;
+gap:10px;
+padding:14px 20px;
+width:420px;
+background:#121a33;
+border-radius:14px;
+}
+
+.search input{
+
+background:none;
+
+border:none;
+
+outline:none;
+
+color:white;
+
+width:100%;
+
+font-size:15px;
+
+}
+
+.top-icons{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.profile{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+background:#121a33;
+
+padding:12px 18px;
+
+border-radius:14px;
+
+}
+
+.welcome{
+
+margin-bottom:35px;
+
+}
+
+.welcome h1{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.welcome p{
+
+color:#9ca8c5;
+
+}
+
+.dashboard-grid{
+display: flex;
+display:grid;
+
+grid-template-columns:repeat(12,1fr);
+
+gap:25px;
+
+}
+
+
+.logout-btn{
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #ef4444;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin-top: auto;
+}
+
+.logout-btn:hover{
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+.logout-btn:active{
+    transform: scale(0.98);
+}

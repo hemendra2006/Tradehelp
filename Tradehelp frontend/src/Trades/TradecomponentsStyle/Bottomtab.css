@@ -1,0 +1,168 @@
+.bottom-tabs{
+    width:100%;
+    margin-top:12px;
+    background:#0d1117;
+    border-top:1px solid #2A2E39;
+    border-bottom:1px solid #2A2E39;
+}
+
+/* Header */
+
+.tabs-header{
+    display:flex;
+    align-items:center;
+    gap:36px;
+    height:50px;
+    padding:0 20px;
+    border-bottom:1px solid #2A2E39;
+}
+
+.tabs-header button{
+    height:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:#9CA3AF;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:.25s;
+    border-bottom:2px solid transparent;
+}
+
+.tabs-header button:hover{
+    color:#fff;
+}
+
+.tabs-header button.active{
+    color:#fff;
+    border-bottom:2px solid #F7931A;
+}
+
+/* Body */
+
+.tabs-content{
+    min-height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    color:#6B7280;
+}
+
+/* Empty State */
+
+.empty-icon{
+    width:70px;
+    height:70px;
+    border:2px solid #2A2E39;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:18px;
+    font-size:30px;
+    color:#3B4252;
+}
+
+.empty-title{
+    font-size:18px;
+    font-weight:600;
+    color:#8B949E;
+    margin-bottom:8px;
+}
+
+.empty-text{
+    font-size:14px;
+    color:#6B7280;
+}
+
+/* Footer */
+
+.tabs-footer{
+    height:36px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    border-top:1px solid #2A2E39;
+    color:#8B949E;
+    font-size:13px;
+}
+
+.connection{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.connection-dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#22c55e;
+}
+
+/* Responsive */
+
+@media (max-width:1200px){
+
+    .tabs-header{
+        gap:24px;
+        overflow-x:auto;
+        scrollbar-width:none;
+    }
+
+    .tabs-header::-webkit-scrollbar{
+        display:none;
+    }
+
+    .tabs-header button{
+        white-space:nowrap;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .tabs-content{
+        min-height:220px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.connection{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.connection-dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+}
+
+.connection-dot.connecting{
+    background:#f59e0b;
+}
+
+.connection-dot.connected{
+    background:#22c55e;
+}
+
+.connection-dot.disconnected{
+    background:#ef4444;
+}
+
+.connection-dot.error{
+    background:#f97316;
+}
