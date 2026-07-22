@@ -58,9 +58,9 @@ const createUsers = async (req, res) => {
   try {
     const { name, email, password } = req.body;
 
-    console.log(req.body);
-console.log(typeof password);
-console.log(password);
+//     console.log(req.body);
+// console.log(typeof password);
+// console.log(password);
 
     // Check if email already exists
     const existingUser = await User.findOne({ email });
@@ -84,8 +84,8 @@ console.log(password);
 
     await newUser.save();
 
-    console.log("✅ User Saved Successfully");
-console.log(newUser);
+//     console.log("✅ User Saved Successfully");
+// console.log(newUser);
 
     generateToken(newUser, res);
 
